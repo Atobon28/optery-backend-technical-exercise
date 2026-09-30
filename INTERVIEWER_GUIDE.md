@@ -23,6 +23,8 @@ At the end of the live, record one explicit outcome:
 - **Fail** — **Do not present**, even if the theoretical/interview score is 5/5.
 - **Not evaluated** — practical stage is still pending; do not make a final recommendation yet.
 
+**Automatic Fail rule:** confidently making an incorrect claim about transactions, locks, isolation, or SQL behavior = **Fail** for the practical gate.
+
 The 1–5 dimension scores below are evidence for the decision. They do not get averaged with the theoretical score to override a failed live assessment.
 
 ## Part 0 — Start project
@@ -45,7 +47,7 @@ Ask what can go wrong if two workers process the same record almost simultaneous
 
 Strong answers may include an atomic state transition, row-level locking on a production database, or another database-backed ownership mechanism.
 
-**Failure signal:** confidently making an incorrect claim about transactions, locks, isolation, or SQL behavior. If the candidate is unsure but reasons carefully, probe further; the failure signal is specifically incorrect technical certainty.
+**Automatic gate Fail:** confidently making an incorrect claim about transactions, locks, isolation, or SQL behavior. If the candidate is unsure but reasons carefully, probe further; the automatic failure applies specifically to incorrect technical certainty.
 
 ## Part 3 — Distributed Systems & Reliability
 
